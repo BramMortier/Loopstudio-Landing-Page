@@ -1,0 +1,170 @@
+// general
+// -------
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: $Alata;
+  min-height: 100vh;
+}
+
+ul,ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.background-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+// typography
+// ----------
+
+h1 {
+  font-family: $Josefin;
+  font-size: 8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+}
+
+h2 {
+  font-family: $Josefin;
+  font-size: 6rem;
+  font-weight: bold;
+  color: $black;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: $white;
+  font-family: $Josefin;
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: $dark-gray;
+  font-size: 1.6rem;
+}
+
+p {
+  font-family: $Alata;
+  color: $dark-gray;
+  font-size: 1.6rem;
+  line-height: 180%;
+}
+
+button {
+  color: $black;
+  font-family: $Josefin;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border: solid $black 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+// typography responsive
+// ---------------------
+
+@include responsive(desktop){
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  } 
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.8rem 3rem;
+    border: solid $black 2px;
+  }
+}
+
+@include responsive(tablet) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.8rem 3rem;
+    border: solid $black 2px;
+  }
+}
+
+@include responsive(mobile) {
+  h1 {
+    font-size: 2rem;
+    line-height: 110%;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.8rem 3rem;
+    border: solid $black 2px;
+  }
+}
+
+@include responsive(mobileS) {
+  h1 {
+    font-size: 1.6rem;
+  }
+}
